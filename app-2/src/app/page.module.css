@@ -1,0 +1,16 @@
+.heading {
+  font-weight: 900;
+  letter-spacing: 5px;
+  padding: 5px;
+}
+
+.ziad {
+  background-color: rgb(38, 67, 67);
+  width: fit-content;
+}
+
+.coloredText {
+  background: linear-gradient(to bottom, rgb(119, 244, 46), rgb(55, 226, 248));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

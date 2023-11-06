@@ -1,0 +1,16 @@
+.navbar {
+  background-color: teal;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  transition: 0.5s;
+}
+.navbar > a {
+  background-color: rgb(212, 55, 27);
+  color: white;
+  margin: 5px;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 10px;
+}

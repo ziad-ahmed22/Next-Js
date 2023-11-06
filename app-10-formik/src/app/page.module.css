@@ -1,0 +1,42 @@
+/* ******************** */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+.main form {
+  width: 220px;
+}
+
+.main input {
+  margin-top: 15px;
+  padding: 4px;
+  width: 100%;
+}
+
+.main input[type="submit"] {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin-top: 15px;
+}
+
+.main .error {
+  color: rgb(250, 136, 136);
+  text-transform: uppercase;
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.main .dirty {
+  background-color: rgba(255, 0, 0, 0.518);
+  cursor: no-drop;
+}
+
+/* ******************** */

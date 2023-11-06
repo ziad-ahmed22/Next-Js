@@ -1,0 +1,27 @@
+.blog {
+  max-width: 1000px;
+  margin: 10px auto;
+}
+.title {
+  margin-bottom: 10px;
+}
+.desc {
+  margin-bottom: 20px;
+}
+.imgCon {
+  border: 1px solid white;
+  padding: 5px;
+  position: relative;
+  height: 320px;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.imgCon img {
+  object-fit: cover;
+}
+.description {
+  margin-top: 20px;
+  columns: 2;
+  text-align: justify;
+}

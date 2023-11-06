@@ -1,0 +1,77 @@
+.input-wrapper {
+  label.MuiFormLabel-root {
+    color: gray;
+    margin: 0 0 0.5rem 0 !important;
+    font-size: 1.2rem;
+  }
+
+  .MuiFilledInput-root {
+    border-radius: 16px;
+    background-color: rgb(223, 221, 221);
+    font-size: 1.2rem;
+    border-radius: 19px;
+
+    &:focus {
+      border: none;
+    }
+  }
+
+  input.MuiInputBase-input {
+    padding: 0.8rem;
+    font-size: 1.2rem !important;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    font-size: 1.2rem !important;
+  }
+
+  input:-internal-autofill-selected {
+    font-size: 1.2rem !important;
+  }
+
+  input.MuiInputBase-input::placeholder {
+    color: gray !important;
+    font-size: 1.2rem;
+  }
+
+  input.MuiInputBase-input.MuiFilledInput-input::placeholder {
+    font-size: 1.2rem !important;
+  }
+
+  textarea.MuiInputBase-inputMultiline::placeholder {
+    color: gray !important;
+  }
+
+  .MuiFilledInput-root:hover {
+    background-color: rgb(223, 221, 221);
+  }
+
+  input.MuiInputBase-input:focus::placeholder {
+    color: rgb(0, 0, 0);
+  }
+
+  input.MuiInputBase-input.MuiFilledInput-input.Mui-disabled {
+    -webkit-text-fill-color: gray;
+    background-color: gray;
+  }
+
+  .icon-space,
+  .MuiInputAdornment-root {
+    margin-right: 0;
+    margin-inline-start: 1.2rem;
+    color: black;
+  }
+
+  .MuiButtonBase-root.MuiIconButton-root {
+    margin-right: auto;
+    margin-left: 8px;
+  }
+
+  input[type="password"] {
+    font-family: Verdana !important;
+  }
+}

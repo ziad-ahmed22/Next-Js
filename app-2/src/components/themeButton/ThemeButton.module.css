@@ -1,0 +1,25 @@
+.themeContainer {
+  border: 2px solid tomato;
+  width: fit-content;
+  padding: 2px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.dark {
+  margin-right: 3px;
+}
+.light {
+  margin-left: 3px;
+}
+.over {
+  position: absolute;
+  width: 26px;
+  aspect-ratio: 1/1; /* width === height */
+  background-color: tomato;
+  border-radius: 50%;
+  /* left: calc(100% - 26px); */
+  top: 0;
+  transition: 0.5s;
+}

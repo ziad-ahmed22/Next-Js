@@ -5,10 +5,13 @@ const UsersPage = async () => {
   // Any Req By Difault Is SSG => Will Cache Res Forever
   const res = await fetch("https://jsonplaceholder.typicode.com/users", {
     //
-    // // => SSG => Cache Forever => Default Value
+    // // => Default
+    // cache: "no-cache",
+    //
+    // // => SSG => Cache Forever
     // cache: "force-cache",
     //
-    // // => SSR => No Cache
+    // // => SSR => No Cache // same as no-cache
     // cache: "no-store",
     //
     // // ISG => Cache For 60 Seconds => Mixed Of SSG & SSR

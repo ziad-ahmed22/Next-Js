@@ -1,0 +1,100 @@
+// .selectWrapper {
+//   .MuiFormLabel-root {
+//     color: gray !important;
+//     margin: 0 0 0.5rem 0 !important;
+//     font-size: 1.2rem !important;
+//   }
+
+//   .MuiInputBase-root {
+//     background-color: rgb(198, 194, 194);
+//     border: none !important;
+//     padding: 1.25rem !important;
+//     width: 100% !important;
+//     font-size: 1.2rem !important;
+//     border-radius: 19px;
+//   }
+
+//   input::placeholder {
+//     font-size: 1.2rem !important;
+//     color: rgb(0, 0, 0);
+//   }
+
+//   input:focus {
+//     outline: none !important;
+//   }
+
+//   input:hover {
+//     background-color: rgb(198, 194, 194);
+//   }
+
+//   input:focus::placeholder {
+//     color: gray;
+//   }
+
+//   .MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon
+//     .MuiAutocomplete-inputRoot {
+//     padding-right: 0 !important;
+//     outline: none !important;
+//   }
+
+//   .MuiAutocomplete-inputRoot {
+//     flex-wrap: nowrap !important;
+//     padding-right: 0 !important;
+//     border: none !important;
+//   }
+
+//   .MuiAutocomplete-inputRoot[class*="MuiInput-root"]
+//     .MuiAutocomplete-input:first-child {
+//     padding: 0.8rem;
+//   }
+
+//   .MuiInput-underline:after,
+//   .MuiInput-underline:before {
+//     content: none !important;
+//   }
+
+//   .MuiAutocomplete-endAdornment {
+//     right: 1rem;
+//   }
+
+//   .MuiAutocomplete-popupIndicator,
+//   .MuiAutocomplete-popupIndicator:hover {
+//     color: rgb(230, 227, 227);
+//   }
+
+//   .MuiInputBase-root.Mui-disabled {
+//     .MuiAutocomplete-endAdornment {
+//       left: 3rem !important;
+//     }
+
+//     input {
+//       -webkit-text-fill-color: gray;
+//     }
+//   }
+
+//   .chevron-down {
+//     position: absolute;
+//     inset-inline-end: 0.938rem;
+//     color: rgb(230, 227, 227);
+//     pointer-events: none;
+//   }
+
+//   .MuiOutlinedInput-root .MuiAutocomplete-endAdornment {
+//     // right: auto !important;
+//     // left: 12px;
+//   }
+
+//   .MuiOutlinedInput-root {
+//     padding: 0;
+//     .MuiOutlinedInput-notchedOutline {
+//       border: none;
+//     }
+//   }
+// }
+
+// .MuiAutocomplete-popper.MuiPopper-root {
+//   > * {
+//     font-size: 1.2rem !important;
+//     color: gray;
+//   }
+// }

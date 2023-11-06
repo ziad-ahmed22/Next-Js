@@ -1,0 +1,134 @@
+[1]
+Install Next Auth
+    => npm install next-auth
+
+[2]
+Generate Next Auth Secret Random Number
+    => openssl rand -base64 32 => in bash termenal
+    => bnE9HUps7goDX+xOnVnGwrAJLwGeoy7GxfDy/lgPEgY=
+
+[3]
+Create .env.local File In The Same Route package.json
+    => .env.local
+    => NEXTAUTH_SECRET = bnE9HUps7goDX+xOnVnGwrAJLwGeoy7GxfDy/lgPEgY=
+
+[4]
+Go To Next Auth Website
+    => In Providers Chose Github, Facebook, Gmail => (GITHUB)
+    => https://next-auth.js.org/providers/github
+    => Configuration
+    => https://github.com/settings/apps
+    => Redirect You To Github
+    => OAuth App => Create OAuth App
+    => Homepage URL => http://localhost:3000 => (Must Change It In Deployment)
+    => Authorization callback URL => http://localhost:3000/api/auth/callback/github => (Must Change It In Deployment)
+    => Click Register App
+    => Copy Client ID And Add It To .env
+    => Generate A New Client Secret
+    => Copy Client Secret And Add It To .env
+
+[5]
+Create Auth Handler
+    => create route.js => app/auth//[...nextauth]/route.js
+    => NextAuth(options) => 
+
+[6]
+Create Options
+    => create options.js => app/auth//[...nextauth]/options.js
+
+[7]
+After Finishing Auth Handler And Options
+    => npm run dev
+    => http://localhost:3000/api/auth/providers
+    => postman or Browser url => GET
+    => {
+        "github": {
+            "id": "github",
+            "name": "GitHub",
+            "type": "oauth",
+            "signinUrl": "http://localhost:3000/api/auth/signin/github",
+            "callbackUrl": "http://localhost:3000/api/auth/callback/github"
+        },
+        "credentials": {
+            "id": "credentials",
+            "name": "Credentials",
+            "type": "credentials",
+            "signinUrl": "http://localhost:3000/api/auth/signin/credentials",
+            "callbackUrl": "http://localhost:3000/api/auth/callback/credentials"
+        }
+    }
+
+[8]
+Making Btns Or Routes To Signin And Signout
+    => <Link href="/api/auth/signin">Sign In</Link>
+    => <Link href="/api/auth/signout">Sign Out</Link>
+
+===========================================================
+
+[9]
+If You Want To Make A Protected Routes
+
+[10]
+Create middelware.js In Src Folder Or In Same Level With App Folder
+
+[11]
+Create Pages 
+
+===========================================================
+
+[4]
+(GOOGLE)
+Go To Next Auth Website
+    => In Providers Chose Google
+    => https://next-auth.js.org/providers/google
+    => Configuration
+    => https://console.developers.google.com/apis/credentials
+    => Redirect You To Google Cloud
+    => My First Project => New Project
+    => Project name => NextAuth => Create
+    => Configure Consent Screen => External => Create
+    => App name => AuthApp => User support email => ziiadd2211@gmail.com
+    => Developer contact information => Email address => ziiadd2211@gmail.com => Save And Continue
+    => Save And Continue => Save And Continue => Back To Dashboard
+    => Credentials => Create Credentials => OAuth Client ID
+    => Application type => Web Application => Name => Auth App
+    => Authorized JavaScript origins => Add URL => http://localhost:3000 => (Must Change It In Deployment)
+    => Authorized redirect URIs => Add URL => http://localhost:3000/api/auth/callback/google => (Must Change It In Deployment)
+    => Crate
+    => Copy Client ID And Add It To .env
+    => Copy Client Secret And Add It To .env
+  
+===========================================================
+
+[4]
+(Facebook)
+Go To Next Auth Website
+    => In Providers Chose Facebook
+    => https://next-auth.js.org/providers/facebook
+    => Configuration
+    => https://developers.facebook.com/apps/
+    => Redirect You To Meta For Developer
+    => Create app => Consumer => Next
+    => Display Name => AuthApp => Create app
+    => Setting => Basic
+    => Copy App ID And Add It To .env => Client ID
+    => Copy App Secret And Add It To .env => Client Secret
+    => App Domain => Add URL => http://localhost:3000 => (Must Change It In Deployment)
+    => 
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+.my-btn {
+  text-transform: none !important;
+  box-shadow: none !important;
+  border-radius: 8px;
+
+  &.MuiButton-contained,
+  &.MuiButton-contained:hover,
+  &.MuiButton-contained:active,
+  &.MuiButton-contained:focus-visible {
+    color: white;
+    background-color: blueviolet;
+    &.Mui-disabled {
+      opacity: 0.6;
+    }
+  }
+
+  &.MuiButton-outlined,
+  &.MuiButton-outlined:hover,
+  &.MuiButton-outlined:active,
+  &.MuiButton-outlined:focus-visible {
+    color: blueviolet;
+    border-color: blueviolet;
+    background-color: transparent;
+    &.Mui-disabled {
+      opacity: 0.6;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.userDetails {
+  display: flex;
+  gap: 25px;
+}
+.userDetails > div:first-child h4 {
+  margin-bottom: 20px;
+}
+.userDetails > div:last-child div {
+  margin-bottom: 10px;
+}

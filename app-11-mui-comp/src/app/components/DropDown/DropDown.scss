@@ -1,0 +1,61 @@
+.dropdown-wrapper {
+  border-radius: 8px;
+
+  .MuiFormControl-root {
+    background-color: blue;
+    border-radius: inherit;
+
+    .MuiFormLabel-root {
+      color: white;
+      font-size: 20px;
+      // left: unset;
+      // right: 30px;
+      top: -8px;
+      &.MuiInputLabel-shrink {
+        display: none;
+      }
+    }
+
+    .MuiInputBase-root {
+      height: 42px; //
+      .MuiSelect-nativeInput {
+        height: inherit;
+      }
+      .MuiSvgIcon-root {
+        // right: unset;
+        // left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: blue;
+        width: 0.85em;
+        height: 0.85em;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+      }
+      .MuiSelect-select {
+        font-family: "Cairo", sans-serif !important;
+        color: white;
+        padding-right: 20px;
+      }
+      .MuiOutlinedInput-notchedOutline {
+        text-align: right;
+        border: none;
+        & legend {
+          display: none;
+        }
+      }
+    }
+
+    .MuiInputBase-root.Mui-disabled {
+      .MuiSvgIcon-root {
+        opacity: 0.2;
+      }
+    }
+  }
+}
+
+.MuiList-root {
+  li.MuiButtonBase-root {
+    font-family: "Cairo", sans-serif !important;
+  }
+}

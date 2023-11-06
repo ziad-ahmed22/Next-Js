@@ -1,0 +1,36 @@
+.blog {
+  max-width: 800px;
+  margin: 10px auto;
+}
+.card {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 20px;
+  background-color: teal;
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid transparent;
+}
+.card:hover {
+  border: 2px solid white;
+}
+
+.card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.content {
+  flex: 1;
+}
+.card img {
+  border-radius: 10px;
+}
+.card h2 {
+  margin-bottom: 5px;
+}
+
+.blog a {
+  color: white;
+  text-decoration: none;
+}
